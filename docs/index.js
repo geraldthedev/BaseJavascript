@@ -2,21 +2,14 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
 
-class App extends Component{
-    constructor(){
-        super();
-        this.state = {
-            count: 0
-        };
-    }
+class App extends React.Component{
     render(){
         return(
-            <div>
-            <button> Increment </button>
-            {this.state.count}
+            <div className="app-content">
+            <h1> works</h1>
             </div>
-        );
+        )
     }
 }
 
-export default App;
+ReactDOM.render(<App />, document.getElementById('app'));
